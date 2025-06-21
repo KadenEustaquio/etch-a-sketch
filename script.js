@@ -21,19 +21,11 @@ function toggleEventListener() {
         box.addEventListener("mouseover", () => {
             hoverStart(box);
         });
-        box.addEventListener("mouseout", () => {
-            hoverEnd(box);
-        })
     });
 }
 
 function hoverStart(element) {
     element.setAttribute("background-color", "red;");
-    element.classList.toggle("red");
-}
-
-function hoverEnd(element) {
-    element.setAttribute("background-color", "white;");
     element.classList.toggle("red");
 }
 
